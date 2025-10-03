@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecnología & Servicio Técnico</title>
+  <meta name="description" content="Servicios de soporte, reparación y consultoría en tecnología." />
+  <!-- Enlaza el archivo CSS que tu compañero debe crear -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="/" class="brand">TecniHelp</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#servicios">Servicios</a></li>
+          <li class="nav__item"><a href="#nosotros">Nosotros</a></li>
+          <li class="nav__item"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Soporte y reparación de equipos tecnológicos</h1>
+      <p class="hero__subtitle">Soluciones rápidas y confiables para empresas y particulares.</p>
+      <a class="btn btn--primary" href="#contacto">Solicitar presupuesto</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios" class="services container">
+    <h2 class="section-title">Nuestros servicios</h2>
+    <div class="services__grid">
+      <article class="service-card">
+        <h3 class="service-card__title">Reparación de hardware</h3>
+        <p class="service-card__desc">Diagnóstico y reparación de PC, portátiles y periféricos.</p>
+      </article>
+
+      <article class="service-card">
+        <h3 class="service-card__title">Soporte de redes</h3>
+        <p class="service-card__desc">Configuración, optimización y seguridad para redes domésticas y empresariales.</p>
+      </article>
+
+      <article class="service-card">
+        <h3 class="service-card__title">Recuperación de datos</h3>
+        <p class="service-card__desc">Recuperamos archivos desde discos dañados o sistemas que no arrancan.</p>
+      </article>
+
+      <article class="service-card">
+        <h3 class="service-card__title">Instalación y asesoría</h3>
+        <p class="service-card__desc">Instalación de software, migración y asesoramiento en compras tecnológicas.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="nosotros" class="about">
+    <div class="container about__inner">
+      <h2 class="section-title">Quiénes somos</h2>
+      <p>Somos un equipo de técnicos y consultores con experiencia en soluciones informáticas, dedicados a ofrecer un servicio cercano y profesional. Trabajamos con garantía y respaldamos nuestro trabajo.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="contact container">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact__grid">
+      <form class="contact__form" action="#" method="post">
+        <!-- El CSS debe diseñar los inputs y el layout -->
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" placeholder="Cuéntanos tu problema..."></textarea>
+
+        <button class="btn btn--primary" type="submit">Enviar</button>
+      </form>
+
+      <aside class="contact__info">
+        <h3>Visítanos</h3>
+        <p>Calle Falsa 123, Ciudad<br/>Tel: +598 9XX XXX XXX<br/>Horario: Lun-Vie 9:00 - 18:00</p>
+
+        <h4>Redes</h4>
+        <ul class="social">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> TecniHelp — Servicio Técnico. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Pequeño script para año en pie de página
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Nota: tu compañero debe crear 'styles.css' en la misma carpeta y añadir estilos. -->
+</body>
+</html>
