@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #ff6600;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #e65c00;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about {
+  background: #f0f0f0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact__form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact__form button {
+  width: 100%;
+}
+
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
